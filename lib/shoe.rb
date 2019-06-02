@@ -1,5 +1,3 @@
-require 'pry'
-
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -9,7 +7,6 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand unless BRANDS.include?(brand)
-    puts "#{BRANDS}"
   end
 
   def cobble
