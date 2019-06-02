@@ -1,3 +1,5 @@
+require 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -6,8 +8,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    brands << brand
-    BRANDS = brands.uniq
+    BRANDS << brand
+    binding.pry
   end
 
   def cobble
