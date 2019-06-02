@@ -8,8 +8,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    puts "#{BRANDS.uniq}"
+    BRANDS << brand unless BRANDS.include?(brand) 
+    puts "#{BRANDS}"
   end
 
   def cobble
