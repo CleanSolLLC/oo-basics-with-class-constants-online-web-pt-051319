@@ -8,11 +8,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-  end
-
-  def brand=(name)
-    @brand = name
-    BRANDS << name
+    BRANDS << brand
+    puts "#{BRANDS}"
   end
 
   def cobble
